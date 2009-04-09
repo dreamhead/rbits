@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/67/trunk/lib/rojam/class_file
+END
+cp_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/56/trunk/lib/rojam/class_file/cp_info.rb
+END
+instruction_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/67/trunk/lib/rojam/class_file/instruction_parser.rb
+END
+attribute_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/64/trunk/lib/rojam/class_file/attribute_info.rb
+END
+attribute_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/64/trunk/lib/rojam/class_file/attribute_parser.rb
+END
+class_info.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/28/trunk/lib/rojam/class_file/class_info.rb
+END
+constant_pool.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/56/trunk/lib/rojam/class_file/constant_pool.rb
+END
+class_file.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/34/trunk/lib/rojam/class_file/class_file.rb
+END
+class_node_parser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/39/trunk/lib/rojam/class_file/class_node_parser.rb
+END
+label_manager.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/43/trunk/lib/rojam/class_file/label_manager.rb
+END
+class_file_generator.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/39/trunk/lib/rojam/class_file/class_file_generator.rb
+END

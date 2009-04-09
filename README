@@ -4,7 +4,7 @@ Ye Zheng(dreamhead.cn@gmail.com)
 
 == Overview
 
-RBits is a Ruby library for easy access binary.
+RBits is a Ruby library for easy access to binary.
 
 == Usage
 
@@ -15,25 +15,25 @@ Basic usage is below and visit TUTORIAL for more advanced usage.
 class Example
   include RBits
 
-  u1 :bit1
-  u2 :bit2
-  u4 :bit4
+  u1 :field1
+  u2 :field2
+  u4 :field3
 end
 
 * Write attributes
 
 e = Example.new
-e.bit1 = 1
-e.bit2 = 2
-e.bit3 = 4
+e.field1 = 1
+e.field2 = 2
+e.field3 = 4
 
 io = StringIO.new
-e.write(io) # Now, io.string should be "\001\002\004"
+e.write(io) # Now, io.string should be "\001\000\002\000\000\000\004"
 
 * Read attributes
 
 io = StringIO.new
-io.string = "\001\002\004"
-e = Example.read(io) # Now, e.bit1 is 1
-                     #      e.bit2 is 2
-                     #      e.bit4 is 4
+io.string = "\001\000\002\000\000\000\004"
+e = Example.read(io) # Now, e.field1 is 1
+                     #      e.field2 is 2
+                     #      e.field3 is 4
