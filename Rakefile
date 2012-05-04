@@ -1,14 +1,17 @@
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
 require 'rubygems'
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 
 task :default => %w{spec} 
 
 desc "Run all specs in spec directory"
-Spec::Rake::SpecTask.new do |t|
-  t.spec_files = FileList['spec/**/*_spec.rb']
+RSpec::Core::RakeTask.new
+
+desc "Generate code coverage"
+task :cov do
+  ENV["COVERAGE"] = "true"
+  Rake::Task["spec"].invoke
 end
 
 #borrow from http://dev.rubyonrails.org/svn/rails/trunk/railties/lib/code_statistics.rb
